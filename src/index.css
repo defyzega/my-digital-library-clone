@@ -8,8 +8,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Academic Library Theme */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 22% 15%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,17 +18,20 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Deep University Blue */
+    --primary: 210 85% 15%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Golden Yellow Accent */
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 210 85% 15%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Light Academic Blue */
+    --accent: 210 50% 96%;
+    --accent-foreground: 210 85% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -37,6 +41,20 @@ All colors MUST be HSL.
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    /* Custom Library Colors */
+    --library-gold: 45 95% 55%;
+    --library-blue: 210 85% 15%;
+    --library-light-blue: 210 50% 96%;
+    --library-gray: 210 15% 50%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--library-blue)), hsl(var(--library-blue)) 70%, hsl(var(--library-gold)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--library-light-blue)));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px hsl(var(--library-blue) / 0.1);
+    --shadow-hero: 0 10px 40px hsl(var(--library-blue) / 0.3);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,7 +74,7 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 210 25% 8%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -66,7 +84,7 @@ All colors MUST be HSL.
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 85% 15%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
